@@ -138,11 +138,11 @@
           <div class="lg:p-10">
             <div class="flex justify-between">
               <div class="flex gap-3">
-                <img src="./images/bus-logo.png" alt="">
+                <img src="images/images/bus-logo.png" alt="">
                 <span><h2 class="text-3xl font-semibold text-black">Greenline Paribahan</h2>
                   <p>Coach-009-WEB ! AC_Business</p></span>
               </div>
-              <a class="btn bg-[#1DD1001A] text-[#1DD100] font-bold"><img src="./images/seat-green.png" alt=""><span id="remaining-seat">8 </span>Seats left</a>
+              <a class="btn bg-[#1DD1001A] text-[#1DD100] font-bold"><img src="images/images/seat-green.png" alt=""><span id="remaining-seat">8 </span>Seats left</a>
             </div> 
             <div class="bg-[#F7F8F8] rounded-xl mt-4 space-y-6 p-4 lg:p-8 lg:w-[808px;] lg:h-[258px;]">
               <span class="flex lg:justify-between"><p>Route</p><p class="text-black font-bold">Dhaka - Sylhet</p></span>
@@ -161,9 +161,143 @@
         </div>
         <!-- green line section end here -->
       </section>
+      <section class=" mx-6 lg:mx-24 mt-8">
+        <!-- bus seat section start here -->
+        <div class="grid grid-cols-1 lg:grid-cols-2 p-6 lg:p-14 lg:space-x-10 lg:w-[1170px;] lg:h-[956px;] rounded-xl bg-[#FFFFFF]">
+          <div class="columns-1 space-y-4">
+            <h3 class="text-2xl font-bold text-black">Select Your Seat</h3>
+            <hr>
+            <span class="flex justify-between">
+              <p class="flex"><img src="images/images/seat-gray.png" alt=""> Available</p>
+              <p class="flex"> <img src="images/images/seat-green-filled.png" alt="">Available</p></span>
+            <span></span>
+            <hr>
+            <span class="flex justify-end">
+              <button class="btn bg-[#0307121A]"><img src="images/images/bus-icon.png" alt=""></button>
+            </span>
+            <!-- seat section start -->
+            <div class="space-y-5">
+              <div class="lg:space-x-10">
+                <span class="space-x-5">
+                  <button class="btn seat w-[110px;]">A1</button><button class="btn seat w-[110px;]">A2</button>
+                </span>
+                <span class="space-x-5">
+                  <button class="btn seat w-[110px;]">A3</button><button class="btn seat w-[110px;]">A4</button>
+                </span> 
+              </div>
+              <div class="lg:space-x-10">
+                <span class="space-x-5">
+                  <button class="btn seat w-[110px;]">B1</button><button class="btn seat w-[110px;]">B2</button>
+                </span>
+                <span class="space-x-5">
+                  <button class="btn seat w-[110px;]">B3</button><button class="btn seat w-[110px;]">B4</button>
+                </span>
+              </div> 
+
+              
+              
+            </div>
+
+          </div>
+          <!-- cupon section start -->
+          <div class="columns-1">
+            <h3 class="text-2xl mb-5 font-bold text-black">Select Your Seat</h3>
+            <hr>
+            <div class="bg-[#F7F8F8]  p-5 rounded-xl mt-5">
+              <div class="flex justify-around mb-2 text-black text-lg font-semibold">
+                  <p>Seat <span class="bg-[#1DD100] rounded-full" id="seat-count">0</span></p>
+                  <p>Class</p>
+                  <p>Price</p>
+              </div>
+              <hr>
+                <!-- this is append child section -->
+              <div id="table-information" class="grid grid-cols-3">
+
+            
+              </div>
+              <hr>
+              <p class="flex justify-between mt-2 mb-2 text-black text-lg font-semibold"><span>Total Price</span> <span id="total-price">BDT 0</span></p>
+              
+              <!-- <p class="flex justify-between mt-2 mb-2 text-black text-lg font-semibold"><span>Grand Total</span><span id="grand-price">BDT 0</span></p> -->
+
+              <div id="discount-price" class="flex justify-between mb-2">
+
+              </div>
+              <div id="gaibul-hawa">
+               <!-- <textarea name="" id="field" cols="53" rows="1" placeholder="Have any coupon?" 
+               ></textarea>
+               <button  id="apply" class="btn rounded-xl bg-[#1DD100] mt-5 text-white" >Apply</button> -->
+               <label class="input flex items-center gap-2">
+                <input id="field"  type="text" class="grow" placeholder="Search" />
+                <button  id="apply" class="btn btn-sm text-white bg-[#1DD100]">Apply</button>
+              </label>
+              </div>
+
+              <div class="mt-3">
+                <div class="flex justify-between text-black text-lg font-semibold">
+                 <h3 class="">Grand Price</h3>
+                 <p>BDT <span id="grand-price">0</span></p>
+                </div>
+              </div>
+
+              <div class="space-y-5 mt-5">
+                <h3 class="text-xl font-bold">Passenger Name*</h3>
+                <input type="text" placeholder="Enter Your Name" class="input w-full max-w-xs" />
+                <h3 class="text-xl font-bold">Phone Number*</h3>
+                <input type="text" id="phone-number" placeholder="Enter Your Phone Number" class="input w-full max-w-xs" />
+                <!-- <textarea name=""  cols="30" rows="2" placeholder=""></textarea> -->
+                <h3 class="text-xl font-bold">Email ID</h3>
+                <input type="text" placeholder="Enter your Email" class="input input-bordered w-full max-w-xs" />
+                
+              </div>
+              
+              <button id="next-btn" class="btn w-full bg-[#1DD100] mt-5 text-white" >Next</button>
+          </div>
+
+
+        </div>
+        
+      </section>
 
     </main>
 
-    <footer></footer>
+    <footer class="bg-[#030712]">
+      <section>
+        <div class="lg:p-24">
+          <div class="flex justify-between ">
+            <div>
+              <h2 class="text-3xl font-bold text-white">P-Ticket</h2>
+              <p class="text-white">P-Ticket is a digital platform to make your <br> daily commuting better.</p>
+            </div>
+            
+            <div>
+              <p class="text-lg font-semibold text-white">Download our app</p>
+              <span class="flex mt-3">
+                <img class="bg-cover" src="images/images/playstore.png" alt="">
+                <span class="text-white">
+                  <small>Get It On</small>
+                  <p>Google Play</p></span>
+              </span>
+            </div>
+          </div>
+          <span class="mt-3 mb-3 flex border border-b-cyan-500 border-dashed"></span>
+          <div class="flex justify-between text-white">
+            <p class="">@all rights reserved, P-Ticket services limited.2024</p>
+            <p class="space-x-4"><span>Terms & condition</span><span>Return & refund policy</span><span>Privacy policy</span></p>
+          </div>
+        </div>
+       </section>
+    </footer>
+
+    <section id="success" class="container flex justify-center lg:pt-16 items-center mx-auto hidden">
+      <div class="text-center rounded-xl bg-gray-300 border-solid  flex flex-col justify-center items-center lg:w-[718px;] lg:h-[481px;]">
+      <img class="w-[38px]" src="images/images/success.png" alt="">
+        <h3 class="text-[#1DD100] text-2xl font-semibold">SUCCESS</h3>
+        <p class="text-black">Thank you for Booking Our Bus Seats. <br>
+          We are working hard to find the best service and deals for you. <br>
+          Shortly you will find a confirmation in your email.</p>
+      </div>
+      </section>
+      <script src="index.js"></script>
 </body>
 </html>
